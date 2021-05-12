@@ -1,1 +1,20 @@
 /* Add your CSS code below */
+a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* since 0.9rem is 14.4px and the actual size was 12px and will be it will be increased by 0.9rem = 26.4px */
+
+.message__time {
+  font-size: 26.4px;
+}
+.message--unread {
+  border: 1px solid blue;
+}
+.message__time--old {
+  opacity: 35%;
+}
+.message {
+  line-height: 25px;
+}
