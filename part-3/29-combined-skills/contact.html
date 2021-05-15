@@ -50,23 +50,44 @@
         </form>
       </div>
 
-      <main>
+      <article class="contact-us-page">
         <h1>Contact Us</h1>
         <p>Send us an email if you would like to contact us.</p>
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
+
+          <label for="">
+            Email
+            <input type="email" required />
+          </label>
+          <br />
+          <fieldset>
+            <legend>What branch are you interested in?</legend>
+            <p><label for="london">London</label></p>
+            <input type="radio" name="branch" id="london" value="London" />
+            <br />
+            <p><label for="glasgow">Glasgow</label></p>
+            <input type="radio" name="branch" id="glasgow" value="Glasgow" />
+            <br />
+            <p><label for="manchester">Manchester</label></p>
+            <input type="radio" name="branch" id="manchester" value="Manchester" />
+          </fieldset>
+
           <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
               name="message"
               placeholder="Your message should not be longer than 200 words."
+              id="message"
+              required
             ></textarea>
           </div>
           <button type="submit">Send</button>
         </form>
-      </main>
+      </article>
 
       <footer>
         <p>

@@ -1,1 +1,67 @@
 /* Add your own CSS code below */
+.heart-clr {
+  color: red;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero__title,
+  .hero__author,
+  .hero__time {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-search {
+    margin-left: auto;
+  }
+  .site-header__title {
+    margin-right: auto;
+  }
+  .views {
+    display: flex;
+    align-items: center;
+  }
+
+  .view-list__item,
+  .views__title {
+    margin-left: 15px;
+  }
+  .views__all {
+    margin-left: auto;
+  }
+}
+
+.main-article {
+  max-width: 50em;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-us-page {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
